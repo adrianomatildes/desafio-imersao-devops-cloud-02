@@ -38,7 +38,7 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
 
     - name: Configure and update context
-      run: aws eks update-kubeconfig --name eks --region us-east-1
+      run: aws eks update-kubeconfig --name stg --region us-east-1
 
     - name: Install kubectl
       run: |
